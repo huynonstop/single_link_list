@@ -511,7 +511,7 @@ void DeleteAll(List& l)
 	// Cách 1: Gọi hàm xóa nút đầu tiên nhiều lần đến khi DSLK rỗng
 	while (IsEmptyList(l) == false)
 	{
-		RemoveHead(l);
+		delete RemoveHead(l);
 	}
 	// Cách 2: Chủ động duyệt và hủy từng nút...
 	// Sử dụng 1 con trỏ giữ địa chỉ nút sẽ xóa
